@@ -1,0 +1,339 @@
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: #222422;
+    color:#F5E6EF;
+    font-family: "Tilt Neon", sans-serif;
+}
+
+/* ---------------------- ScrollBar ---------------------- */
+::-webkit-scrollbar {
+    width: 5px; /* Ancho de la barra de desplazamiento */
+  }
+  /* Estilo de la pista (track) de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background: #F5E6EF; /* Color de fondo de la pista */
+  }
+  /* Estilo del mango (thumb) de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color del mango */
+    /* border-radius: 10px; Borde redondeado */
+  }
+  /* Estilo del mango (thumb) de la barra de desplazamiento al ser hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color del mango al pasar el mouse sobre él */
+  }
+
+/* ---------------------- Nav ---------------------- */
+.nav{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    margin-top: 10px;
+    /* position: fixed;
+    top: 0; */
+    /* background-color: #101010; */
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.logo-img{
+    width:60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.social-media-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+    gap: 25px;
+    margin-right: 40px;
+}
+.icon{
+    font-size: 1.5rem;
+}
+.icon::before{
+    color:#F5E6EF;
+}
+
+/* ---------------------- Presentation ---------------------- */
+.presentation-container{
+    margin: auto;
+    margin-top: 0;
+    text-align: center;
+    /* margin: 50px 30px; */
+    width: 70%;
+    line-height: 1.8;
+    height: 80%
+}
+.presentation-title{
+    font-size: 2.5rem;
+}
+.presentation-description{
+    font-size: 1.2rem;
+}
+.btn-projects{
+    font-size: 1.2rem;
+    padding:15px 40px;
+    color: #F5E6EF;
+    background-color: #B460E1;
+    border: none;
+    border-radius: 10px;
+}
+.btn-projects:hover{
+    background-color: #8F4AB4;
+    color: #FCF1F8;
+    cursor: pointer;
+}
+.presentation-end{
+    height: 3px;
+    background-color: #D3AAF9;
+    border: none;
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* ---------------------- About me ---------------------- */
+.about-me-container{
+    margin: 50px auto;
+    /* padding-bottom: 150px; */
+    text-align: center;
+    width: 85%;
+}
+.about-me-title{
+    font-size: 2.1rem;
+}
+.about-me-description{
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.about-me-subtitle{
+    font-size: 1.5rem;
+}
+.about-me-text{
+    font-size: 1rem;
+    line-height: 1.7;
+}
+.about-me-btn-contact{
+    font-size: 1.2rem;
+    padding:15px 30px;
+    color: #F5E6EF;
+    background-color: #B460E1;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.about-me-btn-contact:hover{
+
+    background-color: #8F4AB4;
+    color: #FCF1F8;
+    cursor: pointer;
+}
+.about-me-btn-contact a{
+    text-decoration: none;
+    color: #F5E6EF;
+    width:100%;
+}
+.about-me-end{
+    height: 3px;
+    background-color: #D3AAF9;
+    border: none;
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* ---------------------- Skills ---------------------- */
+.skills-container{
+    margin: 50px auto;
+    /* padding-bottom: 150px; */
+    text-align: center;
+    width: 85%;
+
+}
+.skills-title{
+    font-size: 2.1rem;
+}
+.skills-img-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+.skill-img{
+    width: 150px;
+    height: 150px;
+    margin: 20px 50px;
+    object-fit: cover;
+}
+.skills-end{
+    height: 3px;
+    background-color: #D3AAF9;
+    border: none;
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* ---------------------- Form ---------------------- */
+.form-container{
+    text-align: center;
+}
+.form-title{
+    font-size: 2.1rem;
+}
+.form-label{
+    display: block;
+    font-size: 1.5rem;
+}
+.form-input{
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 5px 30px;
+}
+.form-textarea{
+    font-size: 1.1rem;
+    width: 80%;
+    height: 120px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px 30px;
+
+}
+.form-btn{
+    font-size: 1.2rem;
+    padding:15px 30px;
+    color: #F5E6EF;
+    background-color: #B460E1;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.form-btn:hover{
+    background-color: #8F4AB4;
+    color: #FCF1F8;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* ---------------------- TABLET ---------------------- */
+@media (min-width: 768px) {
+
+    /* ---------------------- Nav ---------------------- */
+    .nav{
+        margin-top: 30px;
+    }
+    .logo-container{
+        margin-left: 40px;
+    }
+    .social-media-container{
+        margin-right: 60px;
+        gap:40px;
+    }
+    .logo-img{
+        width: 100px;
+        height: 100px;
+    }
+    .icon{
+        font-size: 2.5rem;
+    }
+
+
+    /* ---------------------- Presentation ---------------------- */
+    .presentation-container{
+        margin-top: 100px;
+    }
+    .presentation-title{
+        font-size: 3rem;
+    }
+    .presentation-description{
+        font-size: 1.8rem;
+    }
+    .btn-projects{
+        font-size: 1.9rem;
+        padding: 25px 50px;
+    }
+
+    /* ---------------------- About me ---------------------- */
+    .about-me-title{
+        font-size: 2.52rem;
+    }
+    .about-me-description{
+        font-size: 1.65rem;
+    }
+    .about-me-subtitle{
+        font-size: 1.8rem;
+    }
+    .about-me-text{
+        font-size: 1.5rem;
+    }
+    .about-me-btn-contact{
+        font-size: 1.8rem;
+        padding: 20px 40px;
+    }
+
+    /* ---------------------- Skills ---------------------- */
+    .skills-title{
+        font-size: 2.52rem;
+    }
+
+    /* ---------------------- Form ---------------------- */
+    .form-title{
+        font-size: 2.52rem;
+    }
+    .form-btn{
+        font-size: 1.8rem;
+        padding: 20px 40px;
+    }
+    .form-label{
+        font-size: 1.5rem;
+    }
+    .form-input{
+        font-size: 1.5rem;
+    }
+    .form-textarea{
+        font-size: 1.4rem;
+    }
+    
+
+}
+/* ---------------------- DESKTOP ---------------------- */
+@media (min-width: 1024px) {
+
+    /* ---------------------- Nav ---------------------- */
+    .logo-container{
+        margin-left: 50px;
+    }
+    .logo-img{
+        width: 100px;
+        height:100px;
+    }
+    .social-media-container{
+        margin-right: 100px;
+    }
+    .icon{
+        font-size: 2rem;
+    }
+
+    /* ---------------------- Presentation ---------------------- */
+
+    /* ---------------------- About me ---------------------- */
+
+    /* ---------------------- Skills ---------------------- */
+
+}
